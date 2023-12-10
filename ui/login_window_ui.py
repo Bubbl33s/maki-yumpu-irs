@@ -24,7 +24,6 @@ class Ui_MainWindow(object):
 "\n"
 "#btn_login:hover {\n"
 "    background-color: rgb(30, 84, 159);\n"
-"    cursor: pointer;\n"
 "}\n"
 "\n"
 "#btn_login:pressed {\n"
@@ -48,28 +47,28 @@ class Ui_MainWindow(object):
         self.label.setAlignment(QtCore.Qt.AlignCenter)
         self.label.setObjectName("label")
         self.label_2 = QtWidgets.QLabel(self.container)
-        self.label_2.setGeometry(QtCore.QRect(160, 180, 151, 31))
+        self.label_2.setGeometry(QtCore.QRect(160, 150, 151, 31))
         font = QtGui.QFont()
         font.setFamily("Microsoft YaHei UI")
         font.setPointSize(14)
         self.label_2.setFont(font)
         self.label_2.setObjectName("label_2")
         self.txt_user = QtWidgets.QLineEdit(self.container)
-        self.txt_user.setGeometry(QtCore.QRect(160, 220, 281, 31))
+        self.txt_user.setGeometry(QtCore.QRect(160, 190, 281, 31))
         font = QtGui.QFont()
         font.setFamily("century-ghotic")
         self.txt_user.setFont(font)
         self.txt_user.setText("")
         self.txt_user.setObjectName("txt_user")
         self.label_5 = QtWidgets.QLabel(self.container)
-        self.label_5.setGeometry(QtCore.QRect(160, 260, 151, 31))
+        self.label_5.setGeometry(QtCore.QRect(160, 230, 151, 31))
         font = QtGui.QFont()
         font.setFamily("Microsoft YaHei UI")
         font.setPointSize(14)
         self.label_5.setFont(font)
         self.label_5.setObjectName("label_5")
         self.txt_password = QtWidgets.QLineEdit(self.container)
-        self.txt_password.setGeometry(QtCore.QRect(160, 300, 281, 31))
+        self.txt_password.setGeometry(QtCore.QRect(160, 270, 281, 31))
         font = QtGui.QFont()
         font.setFamily("century-ghotic")
         self.txt_password.setFont(font)
@@ -77,7 +76,7 @@ class Ui_MainWindow(object):
         self.txt_password.setText("")
         self.txt_password.setObjectName("txt_password")
         self.btn_login = QtWidgets.QPushButton(self.container)
-        self.btn_login.setGeometry(QtCore.QRect(160, 370, 281, 41))
+        self.btn_login.setGeometry(QtCore.QRect(160, 340, 281, 41))
         font = QtGui.QFont()
         font.setFamily("Microsoft YaHei UI")
         font.setPointSize(12)

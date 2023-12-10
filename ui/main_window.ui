@@ -46,7 +46,7 @@
      <attribute name="title">
       <string>Generar Pedido</string>
      </attribute>
-     <widget class="QGroupBox" name="groupBox">
+     <widget class="QGroupBox" name="gb_gp_cliente">
       <property name="geometry">
        <rect>
         <x>10</x>
@@ -77,7 +77,7 @@
         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt; font-weight:600;&quot;&gt;ID&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
        </property>
       </widget>
-      <widget class="QLineEdit" name="txt_user">
+      <widget class="QLineEdit" name="txt_id_cliente_gp">
        <property name="geometry">
         <rect>
          <x>20</x>
@@ -117,7 +117,7 @@
         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt; font-weight:600;&quot;&gt;Nombre Completo&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
        </property>
       </widget>
-      <widget class="QLineEdit" name="txt_user_2">
+      <widget class="QLineEdit" name="txt_nombre_cliente_gp">
        <property name="geometry">
         <rect>
          <x>20</x>
@@ -138,7 +138,7 @@
         <string/>
        </property>
       </widget>
-      <widget class="QLineEdit" name="txt_user_3">
+      <widget class="QLineEdit" name="txt_buscar_cliente_gp">
        <property name="geometry">
         <rect>
          <x>20</x>
@@ -181,7 +181,7 @@
        </property>
       </widget>
      </widget>
-     <widget class="QGroupBox" name="groupBox_2">
+     <widget class="QGroupBox" name="gb_gp_pedido">
       <property name="geometry">
        <rect>
         <x>360</x>
@@ -212,7 +212,7 @@
         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Descripción&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
        </property>
       </widget>
-      <widget class="QTextEdit" name="textEdit">
+      <widget class="QTextEdit" name="txt_descripcion_gp">
        <property name="geometry">
         <rect>
          <x>20</x>
@@ -222,7 +222,7 @@
         </rect>
        </property>
       </widget>
-      <widget class="QTextEdit" name="textEdit_2">
+      <widget class="QTextEdit" name="txt_especificaciones_gp">
        <property name="geometry">
         <rect>
          <x>410</x>
@@ -251,7 +251,7 @@
         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Especificaciones&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
        </property>
       </widget>
-      <widget class="QTextEdit" name="textEdit_3">
+      <widget class="QTextEdit" name="txt_medidas_gp">
        <property name="geometry">
         <rect>
          <x>320</x>
@@ -337,7 +337,7 @@
         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;U. Medida&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
        </property>
       </widget>
-      <widget class="QSpinBox" name="spinBox">
+      <widget class="QSpinBox" name="cpb_cantidad_gp">
        <property name="geometry">
         <rect>
          <x>210</x>
@@ -347,7 +347,7 @@
         </rect>
        </property>
       </widget>
-      <widget class="QComboBox" name="comboBox">
+      <widget class="QComboBox" name="cbo_material_gp">
        <property name="geometry">
         <rect>
          <x>120</x>
@@ -357,7 +357,7 @@
         </rect>
        </property>
       </widget>
-      <widget class="QComboBox" name="comboBox_2">
+      <widget class="QComboBox" name="cbo_umedida_gp">
        <property name="geometry">
         <rect>
          <x>120</x>
@@ -368,7 +368,7 @@
        </property>
       </widget>
      </widget>
-     <widget class="QGroupBox" name="groupBox_3">
+     <widget class="QGroupBox" name="gb_gp_fechas">
       <property name="geometry">
        <rect>
         <x>10</x>
@@ -380,7 +380,7 @@
       <property name="title">
        <string>Fechas</string>
       </property>
-      <widget class="QDateEdit" name="dateEdit">
+      <widget class="QDateEdit" name="date_registro_gp">
        <property name="geometry">
         <rect>
          <x>20</x>
@@ -428,7 +428,7 @@
         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt; font-weight:600;&quot;&gt;Fecha Límite de Inicio&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
        </property>
       </widget>
-      <widget class="QDateEdit" name="dateEdit_2">
+      <widget class="QDateEdit" name="date_inicio_gp">
        <property name="geometry">
         <rect>
          <x>280</x>
@@ -457,7 +457,7 @@
         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt; font-weight:600;&quot;&gt;Fecha de Entrega&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;br/&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
        </property>
       </widget>
-      <widget class="QDateEdit" name="dateEdit_3">
+      <widget class="QDateEdit" name="date_entrega_gp">
        <property name="geometry">
         <rect>
          <x>540</x>
@@ -468,7 +468,7 @@
        </property>
       </widget>
      </widget>
-     <widget class="QPushButton" name="btn_generar">
+     <widget class="QPushButton" name="btn_generar_gp">
       <property name="geometry">
        <rect>
         <x>1000</x>
@@ -490,7 +490,7 @@
 Pedido</string>
       </property>
      </widget>
-     <widget class="QPushButton" name="btn_cancelar">
+     <widget class="QPushButton" name="btn_cancelar_gp">
       <property name="geometry">
        <rect>
         <x>840</x>
@@ -511,7 +511,7 @@ Pedido</string>
        <string>Cancelar</string>
       </property>
      </widget>
-     <widget class="QPushButton" name="btn_limpiar">
+     <widget class="QPushButton" name="btn_limpiar_gp">
       <property name="geometry">
        <rect>
         <x>840</x>
@@ -537,7 +537,7 @@ Pedido</string>
      <attribute name="title">
       <string>Rastrear Pedido</string>
      </attribute>
-     <widget class="QGroupBox" name="groupBox_4">
+     <widget class="QGroupBox" name="gb_rp_pedido">
       <property name="geometry">
        <rect>
         <x>10</x>
@@ -549,7 +549,7 @@ Pedido</string>
       <property name="title">
        <string>Buscar Pedido</string>
       </property>
-      <widget class="QPushButton" name="btn_limpiar_6">
+      <widget class="QPushButton" name="btn_detalles_rp">
        <property name="geometry">
         <rect>
          <x>320</x>
@@ -589,7 +589,7 @@ Pedido</string>
         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt; font-weight:600;&quot;&gt;Descripción&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
        </property>
       </widget>
-      <widget class="QTextEdit" name="textEdit_4">
+      <widget class="QTextEdit" name="txt_descripcion_rp">
        <property name="geometry">
         <rect>
          <x>20</x>
@@ -618,7 +618,7 @@ Pedido</string>
         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt; font-weight:600;&quot;&gt;ID&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
        </property>
       </widget>
-      <widget class="QLineEdit" name="txt_user_4">
+      <widget class="QLineEdit" name="txt_buscar_rp">
        <property name="geometry">
         <rect>
          <x>50</x>
@@ -658,7 +658,7 @@ Pedido</string>
         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt; font-weight:600;&quot;&gt;Cliente&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
        </property>
       </widget>
-      <widget class="QLineEdit" name="txt_user_5">
+      <widget class="QLineEdit" name="txt_cliente_rp">
        <property name="geometry">
         <rect>
          <x>100</x>
@@ -680,7 +680,7 @@ Pedido</string>
        </property>
       </widget>
      </widget>
-     <widget class="QGroupBox" name="groupBox_5">
+     <widget class="QGroupBox" name="gb_rp_cliente">
       <property name="geometry">
        <rect>
         <x>490</x>
@@ -692,7 +692,7 @@ Pedido</string>
       <property name="title">
        <string>Buscar por Cliente</string>
       </property>
-      <widget class="QLineEdit" name="txt_user_6">
+      <widget class="QLineEdit" name="txt_buscar_cliente_rp">
        <property name="geometry">
         <rect>
          <x>20</x>
@@ -713,7 +713,7 @@ Pedido</string>
         <string>    ID o Nombre del Cliente</string>
        </property>
       </widget>
-      <widget class="QTableWidget" name="tableWidget">
+      <widget class="QTableWidget" name="tbl_pedido_rp">
        <property name="geometry">
         <rect>
          <x>20</x>
@@ -744,7 +744,7 @@ Pedido</string>
        </column>
       </widget>
      </widget>
-     <widget class="QPushButton" name="btn_limpiar_5">
+     <widget class="QPushButton" name="btn_gestionar_rp">
       <property name="geometry">
        <rect>
         <x>720</x>
@@ -765,7 +765,7 @@ Pedido</string>
        <string>Gestionar Pedido</string>
       </property>
      </widget>
-     <widget class="QPushButton" name="btn_limpiar_4">
+     <widget class="QPushButton" name="btn_generar_rp">
       <property name="geometry">
        <rect>
         <x>950</x>
@@ -786,7 +786,7 @@ Pedido</string>
        <string>Generar Reporte</string>
       </property>
      </widget>
-     <widget class="QPushButton" name="btn_limpiar_3">
+     <widget class="QPushButton" name="btn_cancelar_rp">
       <property name="geometry">
        <rect>
         <x>510</x>
@@ -812,7 +812,7 @@ Pedido</string>
      <attribute name="title">
       <string>Reporte de Material</string>
      </attribute>
-     <widget class="QGroupBox" name="groupBox_6">
+     <widget class="QGroupBox" name="gb_rm_info">
       <property name="geometry">
        <rect>
         <x>10</x>
@@ -862,7 +862,7 @@ Pedido</string>
         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Material&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
        </property>
       </widget>
-      <widget class="QSpinBox" name="spinBox_2">
+      <widget class="QSpinBox" name="spb_cantidad_rm">
        <property name="geometry">
         <rect>
          <x>260</x>
@@ -872,7 +872,7 @@ Pedido</string>
         </rect>
        </property>
       </widget>
-      <widget class="QComboBox" name="comboBox_3">
+      <widget class="QComboBox" name="cbo_material_rm">
        <property name="geometry">
         <rect>
          <x>130</x>
@@ -901,7 +901,7 @@ Pedido</string>
         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Color&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
        </property>
       </widget>
-      <widget class="QLineEdit" name="lineEdit">
+      <widget class="QLineEdit" name="txt_color_rm">
        <property name="geometry">
         <rect>
          <x>130</x>
@@ -911,7 +911,7 @@ Pedido</string>
         </rect>
        </property>
       </widget>
-      <widget class="QTextEdit" name="textEdit_5">
+      <widget class="QTextEdit" name="txt_descripcion_rm">
        <property name="geometry">
         <rect>
          <x>20</x>
@@ -940,7 +940,7 @@ Pedido</string>
         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Descripción&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
        </property>
       </widget>
-      <widget class="QPushButton" name="btn_cancelar_2">
+      <widget class="QPushButton" name="btn_agregar_material_rm">
        <property name="geometry">
         <rect>
          <x>220</x>
@@ -961,7 +961,7 @@ Pedido</string>
         <string>Agregar</string>
        </property>
       </widget>
-      <widget class="QPushButton" name="btn_cancelar_3">
+      <widget class="QPushButton" name="btn_cancelar_material_rm">
        <property name="geometry">
         <rect>
          <x>40</x>
@@ -983,7 +983,7 @@ Pedido</string>
        </property>
       </widget>
      </widget>
-     <widget class="QGroupBox" name="groupBox_7">
+     <widget class="QGroupBox" name="gb_rm_reporte">
       <property name="geometry">
        <rect>
         <x>460</x>
@@ -1026,7 +1026,7 @@ Pedido</string>
        </column>
       </widget>
      </widget>
-     <widget class="QGroupBox" name="groupBox_8">
+     <widget class="QGroupBox" name="gb_rm_detalles">
       <property name="geometry">
        <rect>
         <x>460</x>
@@ -1038,7 +1038,7 @@ Pedido</string>
       <property name="title">
        <string>Detalles</string>
       </property>
-      <widget class="QLineEdit" name="lineEdit_2">
+      <widget class="QLineEdit" name="txt_nombre_rm">
        <property name="geometry">
         <rect>
          <x>110</x>
@@ -1067,7 +1067,7 @@ Pedido</string>
         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Nombre&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
        </property>
       </widget>
-      <widget class="QDateEdit" name="dateEdit_4">
+      <widget class="QDateEdit" name="date_rm">
        <property name="geometry">
         <rect>
          <x>110</x>
@@ -1096,7 +1096,7 @@ Pedido</string>
         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Fecha&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
        </property>
       </widget>
-      <widget class="QPushButton" name="btn_cancelar_4">
+      <widget class="QPushButton" name="btn_cancelar_rm">
        <property name="geometry">
         <rect>
          <x>360</x>
@@ -1117,7 +1117,7 @@ Pedido</string>
         <string>Cancelar</string>
        </property>
       </widget>
-      <widget class="QPushButton" name="btn_limpiar_7">
+      <widget class="QPushButton" name="btn_limpiar_rm">
        <property name="geometry">
         <rect>
          <x>360</x>
@@ -1138,7 +1138,7 @@ Pedido</string>
         <string>Limpiar Datos</string>
        </property>
       </widget>
-      <widget class="QPushButton" name="btn_generar_2">
+      <widget class="QPushButton" name="btn_generar_rm">
        <property name="geometry">
         <rect>
          <x>520</x>
@@ -1166,7 +1166,7 @@ Pedido</string>
      <attribute name="title">
       <string>Orden de Compra</string>
      </attribute>
-     <widget class="QGroupBox" name="groupBox_9">
+     <widget class="QGroupBox" name="gb_oc_material">
       <property name="geometry">
        <rect>
         <x>20</x>
@@ -1178,7 +1178,7 @@ Pedido</string>
       <property name="title">
        <string>Orden de Compra</string>
       </property>
-      <widget class="QTableWidget" name="tableWidget_3">
+      <widget class="QTableWidget" name="tbl_oc">
        <property name="geometry">
         <rect>
          <x>20</x>
@@ -1209,7 +1209,7 @@ Pedido</string>
        </column>
       </widget>
      </widget>
-     <widget class="QGroupBox" name="groupBox_10">
+     <widget class="QGroupBox" name="gb_oc_info">
       <property name="geometry">
        <rect>
         <x>760</x>
@@ -1240,7 +1240,7 @@ Pedido</string>
         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Material&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
        </property>
       </widget>
-      <widget class="QComboBox" name="comboBox_4">
+      <widget class="QComboBox" name="cbo_material_oc">
        <property name="geometry">
         <rect>
          <x>110</x>
@@ -1288,7 +1288,7 @@ Pedido</string>
         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Color&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
        </property>
       </widget>
-      <widget class="QSpinBox" name="spinBox_3">
+      <widget class="QSpinBox" name="cpb_cantidad_oc">
        <property name="geometry">
         <rect>
          <x>230</x>
@@ -1298,7 +1298,7 @@ Pedido</string>
         </rect>
        </property>
       </widget>
-      <widget class="QLineEdit" name="lineEdit_3">
+      <widget class="QLineEdit" name="txt_color_oc">
        <property name="geometry">
         <rect>
          <x>110</x>
@@ -1327,7 +1327,7 @@ Pedido</string>
         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Descripción&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
        </property>
       </widget>
-      <widget class="QTextEdit" name="textEdit_6">
+      <widget class="QTextEdit" name="txt_descripcion_oc">
        <property name="geometry">
         <rect>
          <x>20</x>
@@ -1337,7 +1337,7 @@ Pedido</string>
         </rect>
        </property>
       </widget>
-      <widget class="QPushButton" name="btn_cancelar_7">
+      <widget class="QPushButton" name="btn_cancelar_material_oc">
        <property name="geometry">
         <rect>
          <x>20</x>
@@ -1358,7 +1358,7 @@ Pedido</string>
         <string>Cancelar</string>
        </property>
       </widget>
-      <widget class="QPushButton" name="btn_cancelar_8">
+      <widget class="QPushButton" name="btn_agregar_material_oc">
        <property name="geometry">
         <rect>
          <x>210</x>
@@ -1380,7 +1380,7 @@ Pedido</string>
        </property>
       </widget>
      </widget>
-     <widget class="QPushButton" name="btn_cancelar_5">
+     <widget class="QPushButton" name="btn_cancelar_oc">
       <property name="geometry">
        <rect>
         <x>760</x>
@@ -1401,7 +1401,7 @@ Pedido</string>
        <string>Cancelar</string>
       </property>
      </widget>
-     <widget class="QPushButton" name="btn_cancelar_6">
+     <widget class="QPushButton" name="btn_generar_oc">
       <property name="geometry">
        <rect>
         <x>970</x>
@@ -1427,7 +1427,7 @@ Pedido</string>
      <attribute name="title">
       <string>Generar Ficha Técnica</string>
      </attribute>
-     <widget class="QGroupBox" name="groupBox_11">
+     <widget class="QGroupBox" name="gb_ft_prenda">
       <property name="geometry">
        <rect>
         <x>20</x>
@@ -1458,7 +1458,7 @@ Pedido</string>
         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Nombre&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
        </property>
       </widget>
-      <widget class="QLineEdit" name="lineEdit_4">
+      <widget class="QLineEdit" name="txt_nombre_ft">
        <property name="geometry">
         <rect>
          <x>130</x>
@@ -1487,7 +1487,7 @@ Pedido</string>
         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Código&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
        </property>
       </widget>
-      <widget class="QLineEdit" name="lineEdit_5">
+      <widget class="QLineEdit" name="txt_codigo_ft">
        <property name="geometry">
         <rect>
          <x>130</x>
@@ -1516,7 +1516,7 @@ Pedido</string>
         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Descripción&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
        </property>
       </widget>
-      <widget class="QTextEdit" name="textEdit_7">
+      <widget class="QTextEdit" name="txt_descripcion_ft">
        <property name="geometry">
         <rect>
          <x>20</x>
@@ -1527,7 +1527,7 @@ Pedido</string>
        </property>
       </widget>
      </widget>
-     <widget class="QGroupBox" name="groupBox_12">
+     <widget class="QGroupBox" name="gb_ft_detalles">
       <property name="geometry">
        <rect>
         <x>579</x>
@@ -1558,17 +1558,17 @@ Pedido</string>
         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Medidas&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
        </property>
       </widget>
-      <widget class="QTextEdit" name="textEdit_8">
+      <widget class="QTextEdit" name="txt_medidas_ft">
        <property name="geometry">
         <rect>
          <x>20</x>
          <y>100</y>
          <width>541</width>
-         <height>141</height>
+         <height>131</height>
         </rect>
        </property>
       </widget>
-      <widget class="QComboBox" name="comboBox_5">
+      <widget class="QComboBox" name="cbo_umedida_ft">
        <property name="geometry">
         <rect>
          <x>350</x>
@@ -1597,7 +1597,7 @@ Pedido</string>
         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;U. Medida&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
        </property>
       </widget>
-      <widget class="QComboBox" name="comboBox_6">
+      <widget class="QComboBox" name="cbo_talla_ft">
        <property name="geometry">
         <rect>
          <x>90</x>
@@ -1630,7 +1630,7 @@ Pedido</string>
        <property name="geometry">
         <rect>
          <x>20</x>
-         <y>250</y>
+         <y>240</y>
          <width>181</width>
          <height>21</height>
         </rect>
@@ -1645,18 +1645,18 @@ Pedido</string>
         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Acabados&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
        </property>
       </widget>
-      <widget class="QTextEdit" name="textEdit_9">
+      <widget class="QTextEdit" name="txt_acabados_ft">
        <property name="geometry">
         <rect>
          <x>20</x>
-         <y>280</y>
+         <y>270</y>
          <width>541</width>
-         <height>121</height>
+         <height>131</height>
         </rect>
        </property>
       </widget>
      </widget>
-     <widget class="QPushButton" name="btn_limpiar_10">
+     <widget class="QPushButton" name="btn_generar_ft">
       <property name="geometry">
        <rect>
         <x>960</x>
@@ -1677,7 +1677,7 @@ Pedido</string>
        <string>Generar Ficha</string>
       </property>
      </widget>
-     <widget class="QPushButton" name="btn_limpiar_9">
+     <widget class="QPushButton" name="btn_cancelar_ft">
       <property name="geometry">
        <rect>
         <x>580</x>
@@ -1698,7 +1698,7 @@ Pedido</string>
        <string>Cancelar</string>
       </property>
      </widget>
-     <widget class="QPushButton" name="btn_limpiar_8">
+     <widget class="QPushButton" name="btn_limpiar_ft">
       <property name="geometry">
        <rect>
         <x>760</x>
