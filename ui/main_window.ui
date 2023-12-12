@@ -105,9 +105,9 @@
        <property name="geometry">
         <rect>
          <x>220</x>
-         <y>80</y>
+         <y>70</y>
          <width>181</width>
-         <height>21</height>
+         <height>31</height>
         </rect>
        </property>
        <property name="font">
@@ -324,7 +324,7 @@ Pedido</string>
       <widget class="QLabel" name="label_12">
        <property name="geometry">
         <rect>
-         <x>320</x>
+         <x>220</x>
          <y>420</y>
          <width>101</width>
          <height>31</height>
@@ -337,27 +337,33 @@ Pedido</string>
         </font>
        </property>
        <property name="text">
-        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt; font-weight:600;&quot;&gt;Entrega&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Entrega&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
        </property>
       </widget>
       <widget class="QDateEdit" name="date_entrega_gp">
        <property name="geometry">
         <rect>
-         <x>400</x>
+         <x>280</x>
          <y>420</y>
-         <width>141</width>
+         <width>81</width>
          <height>31</height>
         </rect>
+       </property>
+       <property name="calendarPopup">
+        <bool>true</bool>
        </property>
       </widget>
       <widget class="QDateEdit" name="date_inicio_gp">
        <property name="geometry">
         <rect>
-         <x>130</x>
+         <x>120</x>
          <y>420</y>
-         <width>141</width>
+         <width>81</width>
          <height>31</height>
         </rect>
+       </property>
+       <property name="calendarPopup">
+        <bool>true</bool>
        </property>
       </widget>
       <widget class="QLabel" name="label_11">
@@ -379,7 +385,7 @@ Pedido</string>
         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Límite de Inicio&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
        </property>
       </widget>
-      <widget class="QTableWidget" name="tableWidget">
+      <widget class="QTableWidget" name="tbl_pedido_gp">
        <property name="geometry">
         <rect>
          <x>10</x>
@@ -388,16 +394,6 @@ Pedido</string>
          <height>241</height>
         </rect>
        </property>
-       <column>
-        <property name="text">
-         <string>Codigo</string>
-        </property>
-       </column>
-       <column>
-        <property name="text">
-         <string>Prenda</string>
-        </property>
-       </column>
        <column>
         <property name="text">
          <string>Descripcion</string>
@@ -413,6 +409,46 @@ Pedido</string>
          <string>Color</string>
         </property>
        </column>
+       <column>
+        <property name="text">
+         <string>U. Medida</string>
+        </property>
+       </column>
+      </widget>
+      <widget class="QLabel" name="label_33">
+       <property name="geometry">
+        <rect>
+         <x>380</x>
+         <y>420</y>
+         <width>101</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <family>Microsoft YaHei UI</family>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Precio&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
+      </widget>
+      <widget class="QDoubleSpinBox" name="spb_precio_gp">
+       <property name="geometry">
+        <rect>
+         <x>440</x>
+         <y>420</y>
+         <width>101</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="maximum">
+        <double>9999.989999999999782</double>
+       </property>
+       <property name="singleStep">
+        <double>10.000000000000000</double>
+       </property>
       </widget>
      </widget>
      <widget class="QGroupBox" name="groupBox">
@@ -430,17 +466,23 @@ Pedido</string>
       <widget class="QSpinBox" name="spb_cantidad_gp">
        <property name="geometry">
         <rect>
-         <x>300</x>
+         <x>90</x>
          <y>180</y>
-         <width>111</width>
+         <width>121</width>
          <height>31</height>
         </rect>
+       </property>
+       <property name="maximum">
+        <number>9999</number>
+       </property>
+       <property name="singleStep">
+        <number>10</number>
        </property>
       </widget>
       <widget class="QLabel" name="label_7">
        <property name="geometry">
         <rect>
-         <x>230</x>
+         <x>10</x>
          <y>180</y>
          <width>81</width>
          <height>31</height>
@@ -460,27 +502,27 @@ Pedido</string>
        <property name="geometry">
         <rect>
          <x>90</x>
-         <y>220</y>
+         <y>260</y>
          <width>121</width>
          <height>31</height>
         </rect>
        </property>
-      </widget>
-      <widget class="QLineEdit" name="txt_codigo_prenda_gp">
-       <property name="geometry">
-        <rect>
-         <x>90</x>
-         <y>180</y>
-         <width>121</width>
-         <height>31</height>
-        </rect>
-       </property>
+       <item>
+        <property name="text">
+         <string>USA</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>Australia</string>
+        </property>
+       </item>
       </widget>
       <widget class="QLabel" name="label_9">
        <property name="geometry">
         <rect>
          <x>10</x>
-         <y>219</y>
+         <y>259</y>
          <width>121</width>
          <height>31</height>
         </rect>
@@ -499,7 +541,7 @@ Pedido</string>
        <property name="geometry">
         <rect>
          <x>260</x>
-         <y>240</y>
+         <y>250</y>
          <width>131</width>
          <height>41</height>
         </rect>
@@ -514,25 +556,6 @@ Pedido</string>
        </property>
        <property name="text">
         <string>Agregar</string>
-       </property>
-      </widget>
-      <widget class="QLabel" name="label_33">
-       <property name="geometry">
-        <rect>
-         <x>10</x>
-         <y>180</y>
-         <width>121</width>
-         <height>31</height>
-        </rect>
-       </property>
-       <property name="font">
-        <font>
-         <family>Microsoft YaHei UI</family>
-         <pointsize>10</pointsize>
-        </font>
-       </property>
-       <property name="text">
-        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-weight:600;&quot;&gt;Código&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
        </property>
       </widget>
       <widget class="QTextEdit" name="txt_dec_prenda_gp">
@@ -568,7 +591,7 @@ Pedido</string>
        <property name="geometry">
         <rect>
          <x>10</x>
-         <y>260</y>
+         <y>220</y>
          <width>71</width>
          <height>31</height>
         </rect>
@@ -587,7 +610,7 @@ Pedido</string>
        <property name="geometry">
         <rect>
          <x>90</x>
-         <y>260</y>
+         <y>220</y>
          <width>121</width>
          <height>31</height>
         </rect>

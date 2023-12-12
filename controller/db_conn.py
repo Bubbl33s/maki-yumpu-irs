@@ -38,19 +38,6 @@ class Database:
             self.cursor.execute(query, *args)
         except pyodbc.Error as e:
             print(f"Error al ejecutar la consulta: {e}")
-            
-    def buscar_cliente(self, string):
-        query = "SELECT id_cliente, nombres_cliente, ap_pat_cliente, ap_mat_cliente FROM TB_CLIENTE WHERE" + \
-                "(id_cliente LIKE ?) OR (nombres_cliente LIKE ?) OR (ap_pat_cliente LIKE ?) OR (ap_mat_cliente LIKE ?)"
-        args = (f"%{string}%", f"%{string}%", f"%{string}%", f"%{string}%")
-
-        try:
-            self.execute(query, *args)
-            result = self.cursor.fetchone()
-            return result
-        except pyodbc.Error as e:
-            print(f"Error al buscar el cliente: {e}")
-            return None
         
     # CLOSE CONNECTION
     def close_connection(self):

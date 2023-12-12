@@ -14,7 +14,7 @@ class MainWindow(QtWidgets.QMainWindow):
         self.db = Database()
         
         self.btn_logout.clicked.connect(self.logout)
-        self.tab_gp = GenerarPedidoTab(self, self.db)
+        self.tab_gp = GenerarPedidoTab(self)
         
     def logout(self):
         from view.login_window import LoginWindow
