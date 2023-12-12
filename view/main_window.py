@@ -1,6 +1,9 @@
 from PyQt5 import uic, QtWidgets
 from PyQt5.uic import loadUi
 
+from controller.db_conn import Database
+from controller.generar_pedido_tab import GenerarPedidoTab
+
 
 class MainWindow(QtWidgets.QMainWindow):
     def __init__(self, parent=None):
@@ -8,7 +11,10 @@ class MainWindow(QtWidgets.QMainWindow):
         loadUi("ui/main_window.ui", self)
         self.show()
         
+        self.db = Database()
+        
         self.btn_logout.clicked.connect(self.logout)
+        self.tab_gp = GenerarPedidoTab(self, self.db)
         
     def logout(self):
         from view.login_window import LoginWindow

@@ -12,6 +12,7 @@ class LoginWindow(QtWidgets.QMainWindow):
         
         self.btn_login.clicked.connect(self.load_main_window)
         
+        
     def load_main_window(self):
         self.main_window = MainWindow()
         self.main_window.show()
