@@ -1,8 +1,9 @@
-from PyQt5 import uic, QtWidgets
+from PyQt5 import QtWidgets
 from PyQt5.uic import loadUi
 
-from controller.db_conn import Database
+from model.db_conn import Database
 from controller.generar_pedido_tab import GenerarPedidoTab
+from controller.rastrear_pedido_tab import RastrearPedidoTab
 
 
 class MainWindow(QtWidgets.QMainWindow):
@@ -12,9 +13,11 @@ class MainWindow(QtWidgets.QMainWindow):
         self.show()
         
         self.db = Database()
+        self.tab_gp = GenerarPedidoTab(self)
+        self.tab_rp = RastrearPedidoTab(self)
         
         self.btn_logout.clicked.connect(self.logout)
-        self.tab_gp = GenerarPedidoTab(self)
+
         
     def logout(self):
         from view.login_window import LoginWindow
@@ -22,3 +25,8 @@ class MainWindow(QtWidgets.QMainWindow):
         self.login_window = LoginWindow()
         self.login_window.show()
         self.hide()
+
+    def closeEvent(self, event):
+        self.logout()
+        event.accept()
+        

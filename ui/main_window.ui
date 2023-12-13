@@ -40,7 +40,7 @@
      </rect>
     </property>
     <property name="currentIndex">
-     <number>0</number>
+     <number>1</number>
     </property>
     <widget class="QWidget" name="tab_generar_pedido">
      <attribute name="title">
@@ -625,10 +625,10 @@ Pedido</string>
      <widget class="QGroupBox" name="gb_rp_pedido">
       <property name="geometry">
        <rect>
-        <x>10</x>
+        <x>610</x>
         <y>10</y>
-        <width>471</width>
-        <height>461</height>
+        <width>551</width>
+        <height>401</height>
        </rect>
       </property>
       <property name="title">
@@ -637,7 +637,7 @@ Pedido</string>
       <widget class="QPushButton" name="btn_detalles_rp">
        <property name="geometry">
         <rect>
-         <x>320</x>
+         <x>410</x>
          <y>20</y>
          <width>131</width>
          <height>51</height>
@@ -653,35 +653,6 @@ Pedido</string>
        </property>
        <property name="text">
         <string>Ver detalles</string>
-       </property>
-      </widget>
-      <widget class="QLabel" name="label_13">
-       <property name="geometry">
-        <rect>
-         <x>20</x>
-         <y>90</y>
-         <width>181</width>
-         <height>21</height>
-        </rect>
-       </property>
-       <property name="font">
-        <font>
-         <family>Microsoft YaHei UI</family>
-         <pointsize>10</pointsize>
-        </font>
-       </property>
-       <property name="text">
-        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt; font-weight:600;&quot;&gt;Descripción&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-       </property>
-      </widget>
-      <widget class="QTextEdit" name="txt_descripcion_rp">
-       <property name="geometry">
-        <rect>
-         <x>20</x>
-         <y>120</y>
-         <width>431</width>
-         <height>271</height>
-        </rect>
        </property>
       </widget>
       <widget class="QLabel" name="label_14">
@@ -724,54 +695,49 @@ Pedido</string>
         <string>    Buscar Pedido</string>
        </property>
       </widget>
-      <widget class="QLabel" name="label_15">
+      <widget class="QTableWidget" name="tbl_detalle_pedido_rp">
        <property name="geometry">
         <rect>
          <x>20</x>
-         <y>410</y>
-         <width>71</width>
-         <height>31</height>
+         <y>80</y>
+         <width>511</width>
+         <height>301</height>
         </rect>
        </property>
-       <property name="font">
-        <font>
-         <family>Microsoft YaHei UI</family>
-         <pointsize>14</pointsize>
-        </font>
-       </property>
-       <property name="text">
-        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:12pt; font-weight:600;&quot;&gt;Cliente&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-       </property>
-      </widget>
-      <widget class="QLineEdit" name="txt_cliente_rp">
-       <property name="geometry">
-        <rect>
-         <x>100</x>
-         <y>410</y>
-         <width>351</width>
-         <height>31</height>
-        </rect>
-       </property>
-       <property name="font">
-        <font>
-         <family>century-ghotic</family>
-        </font>
-       </property>
-       <property name="text">
-        <string/>
-       </property>
-       <property name="placeholderText">
-        <string/>
-       </property>
+       <column>
+        <property name="text">
+         <string>ID Pedido</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>ID Prenda</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>Descripción Prenda</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>Cantidad</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>Color</string>
+        </property>
+       </column>
       </widget>
      </widget>
      <widget class="QGroupBox" name="gb_rp_cliente">
       <property name="geometry">
        <rect>
-        <x>490</x>
+        <x>10</x>
         <y>10</y>
-        <width>671</width>
-        <height>401</height>
+        <width>591</width>
+        <height>461</height>
        </rect>
       </property>
       <property name="title">
@@ -798,18 +764,23 @@ Pedido</string>
         <string>    ID o Nombre del Cliente</string>
        </property>
       </widget>
-      <widget class="QTableWidget" name="tbl_pedido_rp">
+      <widget class="QTableWidget" name="tbl_pedido_cliente_rp">
        <property name="geometry">
         <rect>
          <x>20</x>
          <y>80</y>
-         <width>631</width>
-         <height>311</height>
+         <width>551</width>
+         <height>361</height>
         </rect>
        </property>
        <column>
         <property name="text">
-         <string>Cliente</string>
+         <string>ID Cliente</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>Nombre Completo</string>
         </property>
        </column>
        <column>
@@ -819,12 +790,12 @@ Pedido</string>
        </column>
        <column>
         <property name="text">
-         <string>Descripción</string>
+         <string>Fecha</string>
         </property>
        </column>
        <column>
         <property name="text">
-         <string>Estado</string>
+         <string>Precio</string>
         </property>
        </column>
       </widget>
@@ -832,9 +803,9 @@ Pedido</string>
      <widget class="QPushButton" name="btn_gestionar_rp">
       <property name="geometry">
        <rect>
-        <x>720</x>
+        <x>790</x>
         <y>420</y>
-        <width>191</width>
+        <width>161</width>
         <height>51</height>
        </rect>
       </property>
@@ -853,9 +824,9 @@ Pedido</string>
      <widget class="QPushButton" name="btn_generar_rp">
       <property name="geometry">
        <rect>
-        <x>950</x>
+        <x>980</x>
         <y>420</y>
-        <width>191</width>
+        <width>161</width>
         <height>51</height>
        </rect>
       </property>
@@ -874,9 +845,9 @@ Pedido</string>
      <widget class="QPushButton" name="btn_cancelar_rp">
       <property name="geometry">
        <rect>
-        <x>510</x>
+        <x>610</x>
         <y>420</y>
-        <width>171</width>
+        <width>151</width>
         <height>51</height>
        </rect>
       </property>

@@ -1,5 +1,5 @@
 import pyodbc
-from controller.db_conn import Database
+from model.db_conn import Database
 
 class GPQuery:
     def __init__(self):

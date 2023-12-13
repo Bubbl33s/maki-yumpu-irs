@@ -1,10 +1,10 @@
 from PyQt5 import QtWidgets
 from PyQt5.QtCore import QDate
 
-from controller.queries_gp import GPQuery
+from model.queries_gp import GPQuery
 
 
-class GenerarPedidoTab():
+class GenerarPedidoTab:
     def __init__(self, tab):
         self.tab = tab
         self.queries = GPQuery()
