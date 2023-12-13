@@ -10,6 +10,7 @@ class RastrearPedidoTab:
         
         self.tab.txt_buscar_cliente_rp.textChanged.connect(self.buscar_pedido_cliente)
         self.tab.txt_buscar_rp.textChanged.connect(self.buscar_pedido)
+        self.tab.tbl_pedido_cliente_rp.cellClicked.connect(self.obtener_pedido_celda)
         
     def buscar_pedido_cliente(self):
         codigo_o_nombre = self.tab.txt_buscar_cliente_rp.text()
@@ -58,4 +59,19 @@ class RastrearPedidoTab:
                     self.tab.tbl_detalle_pedido_rp.setItem(row_position, col, item)
         else:
             self.tab.tbl_detalle_pedido_rp.setRowCount(0)
+    
+    def obtener_pedido_celda(self, row, col):
+        self.tab.tbl_detalle_pedido_rp.setRowCount(0)        
+        id_pedido = self.tab.tbl_pedido_cliente_rp.item(row, 2).text()
+        result = self.queries.buscar_pedido(id_pedido)
+    
+        for row_data in result:
+            row_position = self.tab.tbl_detalle_pedido_rp.rowCount()
+            self.tab.tbl_detalle_pedido_rp.insertRow(row_position)
+            
+            for col, data in enumerate(row_data):
+                item = QtWidgets.QTableWidgetItem(str(data))
+                self.tab.tbl_detalle_pedido_rp.setItem(row_position, col, item)
+    
+    # TODO: Generar reporte
     
