@@ -430,7 +430,8 @@ class Ui_MainWindow(object):
         self.label_20.setFont(font)
         self.label_20.setObjectName("label_20")
         self.date_rm = QtWidgets.QDateEdit(self.gb_rm_detalles)
-        self.date_rm.setGeometry(QtCore.QRect(110, 70, 211, 31))
+        self.date_rm.setGeometry(QtCore.QRect(110, 70, 221, 31))
+        self.date_rm.setReadOnly(True)
         self.date_rm.setObjectName("date_rm")
         self.label_21 = QtWidgets.QLabel(self.gb_rm_detalles)
         self.label_21.setGeometry(QtCore.QRect(20, 70, 121, 31))
@@ -702,7 +703,7 @@ class Ui_MainWindow(object):
         MainWindow.setCentralWidget(self.centralwidget)
 
         self.retranslateUi(MainWindow)
-        self.tabWidget.setCurrentIndex(1)
+        self.tabWidget.setCurrentIndex(0)
         QtCore.QMetaObject.connectSlotsByName(MainWindow)
 
     def retranslateUi(self, MainWindow):
@@ -792,7 +793,7 @@ class Ui_MainWindow(object):
         self.btn_cancelar_rm.setText(_translate("MainWindow", "Cancelar"))
         self.btn_limpiar_rm.setText(_translate("MainWindow", "Limpiar Datos"))
         self.btn_generar_rm.setText(_translate("MainWindow", "Generar\n"
-"Pedido"))
+"Reporte"))
         self.tabWidget.setTabText(self.tabWidget.indexOf(self.tab_reporte_material), _translate("MainWindow", "Reporte de Material"))
         self.gb_oc_material.setTitle(_translate("MainWindow", "Orden de Compra"))
         item = self.tbl_oc.horizontalHeaderItem(0)

@@ -5,8 +5,9 @@ from model.queries_gp import GPQuery
 
 
 class GenerarPedidoTab:
-    def __init__(self, tab):
+    def __init__(self, tab, id_admin):
         self.tab = tab
+        self.id_admin = id_admin
         self.queries = GPQuery()
 
         self.tab.txt_buscar_cliente_gp.textChanged.connect(self.buscar_cliente)
@@ -51,7 +52,7 @@ class GenerarPedidoTab:
         precio = self.tab.spb_precio_gp.value()
 
         id_pedido = self.queries.insertar_pedido(
-            id_cliente, fecha_generacion_pedido, fecha_limite_inicio, fecha_entrega, precio)
+            id_cliente, self.id_admin, fecha_generacion_pedido, fecha_limite_inicio, fecha_entrega, precio)
 
         if id_pedido:
             # Insertar datos en la tabla TB_DETALLE_PEDIDO

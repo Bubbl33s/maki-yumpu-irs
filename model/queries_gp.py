@@ -80,11 +80,11 @@ class GPQuery:
             # Si no hay registros existentes, empezar desde 1
             return "P0000001"
 
-    def insertar_pedido(self, id_cliente, fecha_generacion_pedido, fecha_limite_inicio, fecha_entrega, precio):
+    def insertar_pedido(self, id_cliente, id_admin, fecha_generacion_pedido, fecha_limite_inicio, fecha_entrega, precio):
         nuevo_id_pedido = self.generar_nuevo_id_pedido()
         if nuevo_id_pedido:
             query = "INSERT INTO TB_PEDIDO (id_pedido, id_cliente, id_admin, fecha_generacion_pedido, fecha_limite_inicio, fecha_entrega, precio) VALUES (?, ?, ?, ?, ?, ?, ?)"
-            args = (nuevo_id_pedido, id_cliente, 'ADM00001', fecha_generacion_pedido, fecha_limite_inicio, fecha_entrega, precio)
+            args = (nuevo_id_pedido, id_cliente, id_admin, fecha_generacion_pedido, fecha_limite_inicio, fecha_entrega, precio)
             try:
                 self.db.execute(query, *args)
                 self.db.conn.commit()
